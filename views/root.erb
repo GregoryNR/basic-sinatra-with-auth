@@ -1,0 +1,23 @@
+<% if flash[:register_notice] %>
+  <p><%= flash[:register_notice] %></p>
+<% end %>
+<a href="/register/">
+  <div id="register_button">Register</div>
+</a>
+
+<div class="wrapper">
+<form action="/" method="post">
+  <label for="username">username</label>
+  <input type="text" name="username" id="username"/>
+  <br/>
+  <label for="password">password</label>
+  <input type="text" name="password" id="password"/>
+  <br/>
+  <button type="submit">Login</button>
+
+</form>
+</div>
+
+<div class="login_page">
+  <h1>Welcome, <%=the_user%></h1>
+</div>

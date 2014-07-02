@@ -1,0 +1,20 @@
+#register_button {
+    margin:auto;
+    height:95px;
+    width:200px;
+    font-size:20px;
+    border:2px solid black;
+    background-color: #ccc;
+    text-align:center;
+    font-family: Helvetica, sans-serif;
+    padding-top:55px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.wrapper {
+    margin:auto;
+}

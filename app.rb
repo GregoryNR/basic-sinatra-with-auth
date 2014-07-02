@@ -13,6 +13,26 @@ class App < Sinatra::Application
   end
 
   get "/" do
-    "Hello, world"
+    erb :root, :layout => :main_layout
+  end
+
+  get "/register/" do
+    erb :register, :layout => :main_layout
+  end
+
+  post "/form_submit/" do
+    flash[:register_notice] = "Thank you for registering"
+
+    redirect "/"
+  end
+
+  post "/" do
+    # p params
+    the_user = params["username"]
+    p the_user
+    erb :root, :locals => { :the_user => the_user }, :layout => :main_layout
+
+
+
   end
 end
