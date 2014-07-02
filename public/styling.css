@@ -1,4 +1,4 @@
-#register_button {
+#register_button, #logout_button {
     margin:auto;
     height:95px;
     width:200px;
@@ -18,3 +18,4 @@ a {
 .wrapper {
     margin:auto;
 }
+
