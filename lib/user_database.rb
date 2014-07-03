@@ -14,6 +14,16 @@ class UserDatabase
     user.dup
   end
 
+  def find_id_from_username(user)
+    id = nil
+    @users.each do |hash|
+      if hash[:username] == user
+        id = hash[:id]
+      end
+    end
+    id
+  end
+
   def find(id)
     (@users[offset_id(id)] or raise UserNotFoundError).dup
   end
